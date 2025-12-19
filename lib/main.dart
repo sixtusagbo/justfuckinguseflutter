@@ -53,34 +53,38 @@ class HomePage extends StatelessWidget {
 
 Flutter says: write it once, run it everywhere. And I don't mean "run it everywhere" like Java promised in the 90s while everything looked like absolute garbage. I mean actually beautiful, native-performance apps on every platform from a single codebase.
 
-Mobile, web, desktop, embedded — all from one Dart codebase. One language. One framework. One team. Done.''',
+Mobile, web, desktop, embedded — all from one Dart codebase. One language. One framework. One team that doesn't want to kill themselves.''',
                 ),
                 const SizedBox(height: 32),
                 _buildSection(
-                  'Hot Reload. Because Life Is Short.',
-                  '''You know what sucks? Making a tiny UI change and waiting 45 seconds for your app to rebuild. Then realizing you used the wrong shade of blue and doing it all over again.
+                  'Hot Reload: Because Life Is Too Short',
+                  '''Remember waiting for your app to rebuild? Watching that progress bar crawl while your coffee gets cold and your will to live slowly drains away?
 
-Flutter's hot reload is measured in milliseconds. MILLISECONDS. Change your code, see it instantly. Your state is preserved. Your sanity is preserved. You actually enjoy building UIs instead of wanting to throw your laptop out the window.
+Flutter has hot reload. You change code. You save. You see the changes instantly. Not "in a few seconds." Not "after a quick rebuild." Fucking instantly.
 
-Stop waiting. Start building.''',
+You can literally iterate on your UI in real-time. Move a button, tweak a color, adjust padding — all while the app is running. It's like having a conversation with your code instead of sending it letters via carrier pigeon.''',
                 ),
                 const SizedBox(height: 32),
                 _buildSection(
-                  'Dart Is Actually Good. Fight Me.',
-                  '''Yes, you have to learn Dart. I know you're clutching your JavaScript like a security blanket. Get over it.
+                  'Dart: A Real Programming Language',
+                  '''JavaScript was created in 10 days. It shows.
 
-Dart is what happens when smart people look at Java and JavaScript, take the good parts, throw away the garbage, and add modern features. It's strongly typed but not annoying about it. It has null safety that actually works. The tooling is excellent.
+Dart has actual static typing that catches bugs before runtime. Null safety that eliminates an entire class of errors. Async/await that doesn't make you want to gouge your eyes out. A package manager that works. Consistent, readable syntax.
 
-And here's the thing — you'll learn it in a weekend. It's not Haskell. It's not Rust. It's a language designed to be productive, not to make you feel smart at parties.''',
+You don't need TypeScript to make it bearable. You don't need Babel to use modern features. You don't need a bundler, a transpiler, and seventeen config files just to write code.
+
+It's just Dart. It compiles fast. It runs fast. It makes sense.''',
                 ),
                 const SizedBox(height: 32),
                 _buildSection(
-                  'Everything Is A Widget. That\'s It.',
-                  '''Flutter's mental model is dead simple: everything is a widget. Your app? Widget. A button? Widget. Padding? Widget. That animation? Also a widget.
+                  'No CSS. No HTML. Just Widgets.',
+                  '''CSS was a mistake. There, I said it. The cascade? More like the cascade of regret when you change one style and break seventeen unrelated components. Specificity wars? !important everywhere? Flexbox that works until it doesn't?
 
-You compose small widgets into bigger widgets into screens into apps. No separate template language. No CSS fighting with your HTML. No wondering why your styles aren't applying. Just widgets, all the way down.
+Flutter doesn't have CSS. It has widgets. Everything is a widget. Want a button? That's a widget. Want padding? That's a widget. Want a complex layout? Compose widgets together like rational human beings.
 
-Some people complain about "widget trees getting too deep." You know what? Extract a widget. Make it reusable. This is programming 101. If your code is messy, that's on you, not Flutter.''',
+No more class name bikeshedding. No more specificity nightmares. No more "Why is this div 3 pixels off?" No more fighting with z-index until you want to cry.
+
+Just declare your UI in Dart. Compose widgets. The layout system actually makes sense. Imagine that.''',
                 ),
                 const SizedBox(height: 32),
                 _buildSection(
@@ -93,32 +97,47 @@ Material Design 3, Cupertino widgets, or your own custom design system — Flutt
                 ),
                 const SizedBox(height: 32),
                 _buildSection(
-                  'But What About—',
-                  '''"But the app size!"
-It's a few megabytes. Your users have TikTok installed. They don't care.
+                  '"But the bundle size—"',
+                  '''Shut up.
 
-"But native performance!"
-Flutter compiles to native ARM code. It's fast. Unless you're building a AAA game engine, you'll never notice a difference.
+Yes, Flutter web apps are bigger than a hand-crafted HTML file. You know what else they do? Actually work as complex applications with state management, animations, and consistent behavior across every browser.
 
-"But I already know React Native!"
-Cool. Enjoy your JavaScript bridge and debugging why your app is dropping frames. We'll be over here with our direct compilation and predictable 60fps.
+You want a static blog? Use HTML. You want an actual application? Use Flutter.
 
-"But web support is still maturing!"
-It's production-ready. Google uses it. Plenty of companies use it. Stop making excuses.''',
+It's getting smaller every release. Google has entire teams working on tree-shaking and optimization. Your hand-rolled JavaScript bundle with 47 npm dependencies isn't exactly svelte either.''',
                 ),
                 const SizedBox(height: 32),
                 _buildSection(
-                  'Just Fucking Use It',
-                  '''Look, I'm not saying Flutter is perfect. Nothing is perfect. But it solves real problems that developers have been complaining about for years:
+                  '"The learning curve—"',
+                  '''Everything has a learning curve, you absolute muppet.
 
-• Multiple codebases for different platforms? Gone.
-• Slow development cycles? Gone.
-• Inconsistent UIs across devices? Gone.
-• Separate teams for iOS and Android? Optional.
+React has hooks, context, reducers, refs, effects, memoization, and seventeen different state management libraries that each require a PhD to understand.
 
-You can keep maintaining six different apps, hiring specialists for each platform, and wondering why your Android app has bugs your iOS app doesn't.
+Flutter has widgets. Stateless widgets for things that don't change. Stateful widgets for things that do. BuildContext for accessing theme and navigation. That's like 80% of what you need to know.
 
-Or you can just fucking use Flutter.''',
+The widget catalog is excellent. The documentation is comprehensive. The community is helpful. Stop whining and start building.''',
+                ),
+                const SizedBox(height: 32),
+                _buildSection(
+                  'What You Actually Get',
+                  '''• One codebase for iOS, Android, web, Windows, macOS, Linux
+• Hot reload that actually works
+• A layout system designed by people who understand math
+• Beautiful Material Design and Cupertino widgets out of the box
+• Animations that are actually pleasant to implement
+• A type system that helps instead of annoys
+• Native performance because it compiles to machine code
+• An ecosystem of packages that mostly work
+• A company (Google) that uses it for production apps''',
+                ),
+                const SizedBox(height: 32),
+                _buildSection(
+                  'Stop Overthinking It',
+                  '''You could spend the next six months evaluating frameworks. Reading comparison articles. Watching YouTube videos. Arguing on Reddit about whether React Native or Kotlin Multiplatform is the future.
+
+Or you could just fucking use Flutter and ship something.
+
+Your users don't care what framework you used. They care that the app works, looks good, and doesn't crash. Flutter does all three.''',
                 ),
                 const SizedBox(height: 48),
                 _buildGetStarted(),
@@ -147,7 +166,7 @@ Or you can just fucking use Flutter.''',
         ),
         SizedBox(height: 8),
         Text(
-          'Seriously. Stop overthinking it.',
+          'A no-bullshit guide to cross-platform development',
           style: TextStyle(
             fontSize: 20,
             color: Color(0xFF888888),
@@ -239,7 +258,7 @@ Or you can just fucking use Flutter.''',
         Container(height: 1, color: const Color(0xFF404040)),
         const SizedBox(height: 24),
         const Text(
-          'Inspired by the fine folks who came before:',
+          'Inspired by the folks who came before:',
           style: TextStyle(fontSize: 14, color: Color(0xFF888888)),
         ),
         const SizedBox(height: 12),
@@ -288,7 +307,7 @@ Or you can just fucking use Flutter.''',
         ),
         const SizedBox(height: 24),
         const Text(
-          'Yes, this site is built with Flutter. Obviously.',
+          'This site was built with Flutter Web. Obviously.',
           style: TextStyle(
             fontSize: 12,
             color: Color(0xFF666666),
