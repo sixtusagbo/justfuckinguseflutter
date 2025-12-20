@@ -297,9 +297,15 @@ Flutter doesn't suck.''',
           spacing: 16,
           runSpacing: 8,
           children: [
-            const Text(
-              'Made by Sixtus Agbo',
-              style: TextStyle(fontSize: 14, color: Color(0xFF888888)),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Text(
+                  'Made by ',
+                  style: TextStyle(fontSize: 14, color: Color(0xFF888888)),
+                ),
+                _buildLink('Sixtus Agbo', 'https://sixtusagbo.dev'),
+              ],
             ),
             _buildLink('GitHub', 'https://github.com/sixtusagbo'),
             _buildLink('Twitter/X', 'https://twitter.com/sixtusagbo'),
