@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-void main() {
-  runApp(const JustFuckingUseFlutter());
-}
+void main() => runApp(const JustFuckingUseFlutter());
 
 class JustFuckingUseFlutter extends StatelessWidget {
   const JustFuckingUseFlutter({super.key});
