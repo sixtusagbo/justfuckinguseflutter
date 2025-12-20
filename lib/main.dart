@@ -48,96 +48,98 @@ class HomePage extends StatelessWidget {
                 _buildTitle(),
                 const SizedBox(height: 32),
                 _buildSection(
-                  'One Codebase. Every Platform. Done.',
-                  '''You know what's exhausting? Writing the same goddamn app five times. Once for iOS. Once for Android. Once for web. Once for Windows. Once for Mac. Once for Linux. That's six fucking codebases to maintain, each with their own special snowflake bugs.
+                  'One Codebase. All Platforms. No More Bullshit Duplication.',
+                  '''Tired of writing the same fucking app six times? iOS in Swift. Android in Kotlin. Web in React. Desktop in Electron garbage. Mac in whatever. Linux in "good luck."
 
-Flutter says: write it once, run it everywhere. And I don't mean "run it everywhere" like Java promised in the 90s while everything looked like absolute garbage. I mean actually beautiful, native-performance apps on every platform from a single codebase.
+Flutter: Write it once in Dart. Run it everywhere—mobile, web, desktop, embedded. Native performance. Beautiful UIs. No "write once, look like shit everywhere" like Java or React Native.
 
-Mobile, web, desktop, embedded — all from one Dart codebase. One language. One framework. One team that doesn't want to kill themselves.''',
+One codebase. One language. One team that isn't suicidal from maintaining platform-specific hell.''',
                 ),
                 const SizedBox(height: 32),
                 _buildSection(
-                  'Hot Reload: Because Life Is Too Short',
-                  '''Remember waiting for your app to rebuild? Watching that progress bar crawl while your coffee gets cold and your will to live slowly drains away?
+                  'Hot Reload: Because Waiting Is For Assholes',
+                  '''Remember staring at build progress bars while your soul dies? Xcode taking minutes. Android Studio chugging like a drunk.
 
-Flutter has hot reload. You change code. You save. You see the changes instantly. Not "in a few seconds." Not "after a quick rebuild." Fucking instantly.
+Flutter hot reload: Change code. Save. See it instantly. Fucking instantly.
 
-You can literally iterate on your UI in real-time. Move a button, tweak a color, adjust padding — all while the app is running. It's like having a conversation with your code instead of sending it letters via carrier pigeon.''',
+Tweak UI live. Move shit around while the app runs. No full rebuilds. It's magic that should've existed a decade ago.''',
                 ),
                 const SizedBox(height: 32),
                 _buildSection(
-                  'Dart: A Real Programming Language',
-                  '''JavaScript was created in 10 days. It shows.
+                  'Dart: A Language That Doesn\'t Suck',
+                  '''JavaScript was rushed in 10 days. It shows—dynamic typing hell, null pointer nightmares, async callback pyramids.
 
-Dart has actual static typing that catches bugs before runtime. Null safety that eliminates an entire class of errors. Async/await that doesn't make you want to gouge your eyes out. A package manager that works. Consistent, readable syntax.
+Dart: Static types that catch bugs early. Built-in null safety. Clean async/await. Fast compilation. Sensible syntax. No need for TypeScript bandaids or Babel bullshit.
 
-You don't need TypeScript to make it bearable. You don't need Babel to use modern features. You don't need a bundler, a transpiler, and seventeen config files just to write code.
-
-It's just Dart. It compiles fast. It runs fast. It makes sense.''',
+Just write code that works. Fast. Predictable. Enjoyable.''',
                 ),
                 const SizedBox(height: 32),
                 _buildSection(
-                  'No CSS. No HTML. Just Widgets.',
-                  '''CSS was a mistake. There, I said it. The cascade? More like the cascade of regret when you change one style and break seventeen unrelated components. Specificity wars? !important everywhere? Flexbox that works until it doesn't?
+                  'No CSS. No HTML. Just Fucking Widgets.',
+                  '''CSS is a cascading pile of regret. Specificity wars. !important abuse. Flexbox that breaks randomly. "Why the fuck is this div off by 2px?"
 
-Flutter doesn't have CSS. It has widgets. Everything is a widget. Want a button? That's a widget. Want padding? That's a widget. Want a complex layout? Compose widgets together like rational human beings.
+Flutter: Everything's a widget. Layouts compose like Lego built by sane people. Padding? Widget. Button? Widget. Complex screen? Nest widgets.
 
-No more class name bikeshedding. No more specificity nightmares. No more "Why is this div 3 pixels off?" No more fighting with z-index until you want to cry.
-
-Just declare your UI in Dart. Compose widgets. The layout system actually makes sense. Imagine that.''',
+Declarative UI in code. No separate style files. No class name debates. The layout system actually works. Every time.''',
                 ),
                 const SizedBox(height: 32),
                 _buildSection(
-                  'Beautiful By Default',
-                  '''Most cross-platform frameworks give you UIs that look... off. Something about the shadows is wrong. The animations feel janky. It's clearly not native and everyone can tell.
+                  'Beautiful Out Of The Box. Pixel-Perfect Everywhere.',
+                  '''Most cross-platform tools give "close enough" UIs. Wrong shadows. Janky scrolls. "Almost native" that fools no one.
 
-Flutter renders every pixel itself. It doesn't use platform UI components that always feel slightly wrong. Your app looks exactly the same on every device because Flutter controls everything.
+Flutter draws every pixel itself. Looks identical on every platform. Material 3. Cupertino. Custom themes. Animations that don't suck to write.
 
-Material Design 3, Cupertino widgets, or your own custom design system — Flutter does it all beautifully.''',
+Your app looks pro. Feels fast. No compromises.''',
                 ),
                 const SizedBox(height: 32),
                 _buildSection(
-                  '"But the bundle size—"',
-                  '''Shut up.
+                  '"But Bundle Size—"',
+                  '''Shut the fuck up.
 
-Yes, Flutter web apps are bigger than a hand-crafted HTML file. You know what else they do? Actually work as complex applications with state management, animations, and consistent behavior across every browser.
+Yeah, Flutter web isn't a 5KB HTML file. But it handles real apps: state, routing, animations, offline—consistently across browsers. Flutter's bundle is fine and shrinking every release.
 
-You want a static blog? Use HTML. You want an actual application? Use Flutter.
-
-It's getting smaller every release. Google has entire teams working on tree-shaking and optimization. Your hand-rolled JavaScript bundle with 47 npm dependencies isn't exactly svelte either.''',
+Your "optimized" JS with 200 npm deps and a 2MB vendor chunk isn't winning awards either.''',
                 ),
                 const SizedBox(height: 32),
+                _buildSection('"But The Learning Curve—"', '''Cry me a river.
+
+Everything worthwhile has a curve. React? Hooks, effects, context, 15 state libs, memo hell.
+
+Flutter? Widgets. Stateless for static shit. Stateful for changing shit. That's it for 90% of apps.
+
+Docs are god-tier. Widget catalog is searchable gold. Community doesn't gatekeep.
+
+Stop whining. Start building.'''),
+                const SizedBox(height: 32),
                 _buildSection(
-                  '"The learning curve—"',
-                  '''Everything has a learning curve, you absolute muppet.
+                  '"But It\'s Google—"',
+                  '''Yeah, and they dogfood it in real apps. Billions of users. Massive investment.
 
-React has hooks, context, reducers, refs, effects, memoization, and seventeen different state management libraries that each require a PhD to understand.
-
-Flutter has widgets. Stateless widgets for things that don't change. Stateful widgets for things that do. BuildContext for accessing theme and navigation. That's like 80% of what you need to know.
-
-The widget catalog is excellent. The documentation is comprehensive. The community is helpful. Stop whining and start building.''',
+Better than some indie framework that'll die next year.''',
                 ),
                 const SizedBox(height: 32),
                 _buildSection(
                   'What You Actually Get',
-                  '''• One codebase for iOS, Android, web, Windows, macOS, Linux
-• Hot reload that actually works
-• A layout system designed by people who understand math
-• Beautiful Material Design and Cupertino widgets out of the box
-• Animations that are actually pleasant to implement
-• A type system that helps instead of annoys
-• Native performance because it compiles to machine code
-• An ecosystem of packages that mostly work
-• A company (Google) that uses it for production apps''',
+                  '''- One codebase: iOS, Android, web, Windows, macOS, Linux
+- Hot reload that spoils you forever
+- Layout system that respects physics and math
+- Stunning built-in widgets (Material + Cupertino)
+- Animations you can actually implement without tears
+- Type safety that saves your ass
+- Compiles to native ARM/machine code—blazing fast
+- Packages that mostly just work
+- Backed by Google, used in production everywhere''',
                 ),
                 const SizedBox(height: 32),
                 _buildSection(
-                  'Stop Overthinking It',
-                  '''You could spend the next six months evaluating frameworks. Reading comparison articles. Watching YouTube videos. Arguing on Reddit about whether React Native or Kotlin Multiplatform is the future.
+                  'Stop Fucking Overthinking',
+                  '''You could waste months debating React Native vs. Tauri vs. Kotlin Multiplatform vs. whatever flavor-of-the-month bullshit.
 
-Or you could just fucking use Flutter and ship something.
+Or just fucking use Flutter. Ship something that works. Looks great. Performs.
 
-Your users don't care what framework you used. They care that the app works, looks good, and doesn't crash. Flutter does all three.''',
+Users don't give a shit about your framework drama. They want an app that doesn't suck.
+
+Flutter doesn't suck.''',
                 ),
                 const SizedBox(height: 48),
                 _buildGetStarted(),
@@ -166,7 +168,7 @@ Your users don't care what framework you used. They care that the app works, loo
         ),
         SizedBox(height: 8),
         Text(
-          'A no-bullshit guide to cross-platform development',
+          'A no-bullshit rant for cross-platform sanity',
           style: TextStyle(
             fontSize: 20,
             color: Color(0xFF888888),
@@ -214,7 +216,7 @@ Your users don't care what framework you used. They care that the app works, loo
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            'Get Started',
+            'Get Started, Motherfucker',
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -229,7 +231,7 @@ Your users don't care what framework you used. They care that the app works, loo
               borderRadius: BorderRadius.circular(4),
             ),
             child: const SelectableText(
-              'flutter create my_app\ncd my_app\nflutter run',
+              'flutter create my_fucking_app\ncd my_fucking_app\nflutter run',
               style: TextStyle(
                 fontFamily: 'monospace',
                 fontSize: 14,
@@ -239,7 +241,7 @@ Your users don't care what framework you used. They care that the app works, loo
           ),
           const SizedBox(height: 16),
           const Text(
-            'That\'s it. That\'s the whole tutorial. Now go build something.',
+            'That\'s literally it. Go build something before you die of analysis paralysis.',
             style: TextStyle(
               fontSize: 14,
               color: Color(0xFF888888),
@@ -258,7 +260,7 @@ Your users don't care what framework you used. They care that the app works, loo
         Container(height: 1, color: const Color(0xFF404040)),
         const SizedBox(height: 24),
         const Text(
-          'Inspired by the folks who came before:',
+          'Inspired by the legends:',
           style: TextStyle(fontSize: 14, color: Color(0xFF888888)),
         ),
         const SizedBox(height: 12),
@@ -307,7 +309,7 @@ Your users don't care what framework you used. They care that the app works, loo
         ),
         const SizedBox(height: 24),
         const Text(
-          'This site was built with Flutter Web. Obviously.',
+          'This page? Built with Flutter Web. Deal with it.',
           style: TextStyle(
             fontSize: 12,
             color: Color(0xFF666666),
