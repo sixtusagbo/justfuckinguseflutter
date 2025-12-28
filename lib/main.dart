@@ -164,15 +164,6 @@ Flutter doesn't suck.''',
             height: 1.2,
           ),
         ),
-        SizedBox(height: 8),
-        Text(
-          'A no-bullshit rant for cross-platform sanity',
-          style: TextStyle(
-            fontSize: 20,
-            color: Color(0xFF888888),
-            fontStyle: FontStyle.italic,
-          ),
-        ),
       ],
     );
   }
